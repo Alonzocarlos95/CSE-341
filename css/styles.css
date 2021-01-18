@@ -1,0 +1,29 @@
+div {
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 20%;
+}
+
+div:hover {
+    font-weight: bold;
+}
+
+.ref1 {
+    background-color: #807182;
+}
+.ref2 {
+    background-color: #C7D3BF;
+}
+
+.ref3 {
+    background-color: #D8AA96;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    cursor: pointer;
+}

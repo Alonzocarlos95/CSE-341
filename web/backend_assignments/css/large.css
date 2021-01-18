@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #D8E2DC;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+header {
+    background-color: #4F7CAC;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+section {
+    margin-left: 1em;
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+}
+
+.weeks {
+    cursor: pointer;
+    display: inline;
+    width: 0%;
+    
+}
+
+#listOfApps {
+    margin-left: 1em;
+}
+
+.intro {
+    text-align: center;
+}
+.myIntro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+.arrow {
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+footer {
+    background-color: #5F634F;
+}
+
+.rights {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+figure {
+    background-color: #fff;
+    padding: 10px;
+    font-size: .875em;
+    display: table;
+    width: 50%;
+ }
+ 
+ figure img {
+     display: block;
+     width: 100%;
+     cursor: pointer;
+ }
+ 
+ figcaption {
+     display: table-caption;
+     caption-side: bottom;
+     background: #fff;
+     padding: 0 5px 5px;
+     font-size: 20px;
+     padding-left: 10px;
+     transform-style: preserve-3d;
+     transform: rotateX(-180deg);
+     transform-origin: top;
+     z-index: -1;
+     position: relative;
+     transition: 1s;
+     color: #4F7CAC;
+     backface-visibility: hidden;
+ }​
+
+.intro-photo{
+    max-width: 60em;
+    max-height: 60em;
+    margin-left: 20%;
+    width: 60%;
+    border: 10px solid #ffffff;
+    position: relative;
+}
+
+.photo-desc {
+    color: #4F7CAC;
+}
+
+figure:hover figcaption{
+    transform:rotateX(0deg);
+}
+
