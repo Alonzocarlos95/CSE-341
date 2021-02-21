@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Russo+One&display=swap');
+
+body{
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    margin: 0;
+}
+
+
+.logo {
+    width: 5em;
+    height: 4em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    /* margin-left: 1em;
+    margin-right: 1em; */
+    margin: 0;
+    background-color: #ffffff;
+
+}
+header h1 {
+    font-family: 'Russo One', sans-serif;
+    color: #773344;
+    align-self: flex-start;
+    padding-left: 0.5em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #773344;
+}
+input[type='search']{
+    height: 2em;
+    width: 20em;
+    align-self: center;
+    margin-left: 6em;
+    flex-grow: 2;
+}
+.pro_list {
+    order: 5;
+    align-self: center;
+    margin-left: 2em;
+    font-family: 'Crimson Text', serif;
+}
+
+.pro_list:hover, .work_list:hover {
+    text-decoration: underline;
+}
+
+ #search_icon {
+     order: 4;
+     align-self: center;
+     border: 1px solid #717568;
+     background-color: #773344;
+     color: #ffffff;
+     cursor: pointer;
+ }
+
+ #down_icon {
+     order: 6;
+     align-self: center;
+ }
+ #down_icon2 {
+    order: 8;
+    align-self: center;
+ }
+
+ .work_list {
+     order: 7;
+     align-self: center;
+     font-family: 'Crimson Text', serif;
+     margin-left: 1em;
+ }
+ #cart_icon {
+    /* order: 9; */
+    align-self: center;
+    cursor: pointer;
+    margin-left: 2em;
+    margin-right: 1em;
+ }
+
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     text-align: center;
+ }
+
+ .p1 {
+    background-color: #F8F8FF;
+    width: 20em;
+    margin-top: 2em;
+    box-shadow: 2px 2px 6px #7A918D;
+ }
+
+ .checkout-items {
+    background-color: #F8F8FF;
+    box-shadow: 2px 2px 6px #7A918D;
+    width: 10em;
+    height: 20%;
+    margin-left: 2em;
+ }
+
+ .productName {
+     font-family: 'Russo One';
+     font-size: 18px;
+     height: 3em;
+ }
+
+ .price {
+     color: #FF0000;
+     font-family: 'Russo One';
+ }
+ input[type="submit"] {
+    background: #773344;
+    color: #fff;
+    font-family: 'Russo One';
+     border-radius: 2px;
+     text-shadow: 1px 1px 0 #773344;
+     padding: 0.6em;
+     cursor: pointer;
+ }
+
+ input[type="button"] {
+    cursor: pointer;
+    background: #D5E3EC;
+    font-family: 'Russo One';
+    border: 1px solid #717568;
+    border-radius: 3px;
+ }
+
+ .buttons {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-bottom: 1em;
+ }
+
+ .counter {
+     background-color: #F8F8FF;
+     position: absolute;
+     color:#773344;
+     line-height: 20px;
+     width: 20px;
+     height: 20px;
+     border: 1px solid #717568;
+     box-shadow: -1px 1px 2px rgba(0,0,0,.4);
+     text-align: center;
+     font-size: 11px;
+     border-radius: 50%;
+     top: -3px;
+     right:2px;
+ }
+.cart_action_store {
+    order: 9;
+    position: relative;
+    align-self: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1em;
+}
+
+/*Modal style*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 3em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1em;  
+    border: 1px solid #717568;
+    width: 30%;
+    height: auto;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+ #submitProd {
+     width: 100%;
+ }
+
+ .input-group {
+     display: flex;
+     height: auto;
+     border: 1px solid #ddd;
+     border-radius: 2px;
+     margin-bottom: 3em;
+     justify-content: space-between;
+     box-sizing: border-box;
+     width: 30%;
+     padding-right: 10px;
+     padding-left: 10px;
+ }
+.increment {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+ .minus {
+
+    color: #773344;
+    align-self: center;
+    text-align: center;
+ }
+.add {
+    align-self: center;
+}
+ .number {
+     color: #773344;
+     height: 2em;
+     text-align: center;
+ }
+
+ .main-page {
+     padding-left: 5em;
+ }
+
+th {
+    background-color: #D5E3EC;
+    border: 1px solid #773344;
+    font-family:'Crimson Text', serif;
+    font-size: 25px;
+}
+td {
+    border: 1px solid #773344;
+}
+
+#deleteItemBtn {
+    color: #773344;
+    padding-left: 2rem;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.container-check {
+    display: flex;
+    flex-direction: row;
+}
+
+.shipForm input[type="text"], input[type="number"], input[type="email"], input[type="select"]{
+    background-color:transparent;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px; 
+    font-weight: bold;
+    line-height: 15px;
+    border: 1px solid #666;
+    color: #000;
+    display:  block;
+    padding: 15px;
+    height: 15px;
+    margin-bottom: 30px;
+    /* width: 100%; */
+}
+
+.container-ship {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.shipForm {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin-left: 5em;
+    width: 50%;
+}
+
+.check-header {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+}
+
+.customer-order ul {
+    list-style: none;
+}
+.customer-order ul li{
+    border-bottom: 1px solid #ccc;
+    display: table;
+    padding: 20px 0;
+    font-family:'Crimson Text', serif;
+    font-size: 25px;
+    width: 100%;
+}
+
+.customer-order ul li > span {
+    display: table-cell;
+    width: 50%;
+    text-transform: capitalize;
+    font-weight: normal;
+    color: #212121;
+}
+.commerce-price {
+    text-align: right;
+}
+.customer-order {
+background-color: #F8F8FF;
+box-shadow: 2px 2px 6px #7A918D;
+padding: 1em 5em;
+}
+
+#submit-order {
+    width: 100%;
+}
+/* .shipForm :nth-child(6), .shipForm :nth-child(8) {
+    width: 100%;
+  }
+  .shipForm :nth-child(2), .shipForm :nth-child(4) {
+    width: 50%;
+  }
+  .shipForm :nth-child(4) {
+     display: inline;
+  } */
+/* label {
+    display: block;
+} */
+
+
+/* q {
+    align-self: flex-end;
+    order: 3;
+
+} */
