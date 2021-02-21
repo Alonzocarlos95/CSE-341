@@ -7,7 +7,7 @@ if ($action == NULL){
 
 switch($action){
     case 'shopping-cart':
-        include '../../shopping-cart/';
+        include '../../shopping_cart/';
         break;
         default:
         include '../index.php';
