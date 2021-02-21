@@ -18,10 +18,11 @@
     <h2 class="weeks">Week 2</h2>
     </section>
     <h3 id="listOfApps"><a href="/backend_assignments/week1/?action=intro-view">Introduction</a></h3>
-    <section>
+    <section id="drop2">
     <i class="arrow right"></i>
     <h2 class="weeks">Week 3</h2>
     </section>
+    <h3 id="listOfApps"><a href="/backend_assignments/week2/?action=shopping-cart">Shopping Cart</a></h3>
     <section>
     <i class="arrow right"></i>
     <h2 class="weeks">Week 4</h2>
