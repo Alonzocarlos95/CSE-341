@@ -8,7 +8,8 @@ if ($action == NULL){
 switch($action){
     case 'shopping-cart':
         // include '../../shopping_cart/index.php';
-        include '/cs313-php/web/shopping_cart/index.php';
+        // include '/cs313-php/web/shopping_cart/index.php';
+        header('Location: ../../shopping_cart/index.php');
         break;
         default:
         include '../index.php';
